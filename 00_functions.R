@@ -49,10 +49,6 @@ processNCBIgff <- function(x){
   return(gff)
 }
 
-
-
-
-
 reorientgff <- function(x, proteinID = NA, bplocation = bp_location, replicon = NA, Rep_size = fasta){
   
   
@@ -105,8 +101,6 @@ reorientgff <- function(x, proteinID = NA, bplocation = bp_location, replicon = 
   
 }
 
-
-
 reorientfna <- function(x, replicon = NA, bplocation = NA, proteinID = NA, gff = NA){
   
   # select replicon
@@ -128,7 +122,6 @@ reorientfna <- function(x, replicon = NA, bplocation = NA, proteinID = NA, gff =
   names(fasta_file) <- names(x)
   return(fasta_file)
 }
-
 
 
 
